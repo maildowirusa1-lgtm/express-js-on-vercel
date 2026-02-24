@@ -28,7 +28,7 @@ app.get("/asystent.js", (req, res) => {
     .then(data => {
       if(data.access_granted){
         let script = document.createElement("script");
-        script.src = "TU_WKLEJ_LINK_DO_NOUPE"; // <- wklej tutaj swój link do widgetu Noupe
+        script.src = "<script src='https://www.noupe.com/embed/019c8ce141d978e195a05b1bcaea756421b9.js'></script>";
         document.head.appendChild(script);
       }
     });
